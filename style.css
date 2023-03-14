@@ -5,7 +5,7 @@ body{
 }
 .part-2-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -16,7 +16,7 @@ body{
     font-weight: 700;
 }
 .arriba-container {
-    height: 50%;
+    max-height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,13 +45,13 @@ body{
     font-weight: 700;
     margin-left: 1%;
 }
-.down-buttons{
-}
 
 .img-arriba{
     width: 50%;
     max-height: 100%;
-    margin:2%
+    margin:2%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .img{
@@ -79,15 +79,15 @@ body{
     color: rgb(108, 108, 108);
     padding-bottom: 20px;
     
-    }
+}
 
-    .parrafo-gris-li2{
-        color: rgb(108, 108, 108);
-        }
+.parrafo-gris-li2{
+    color: rgb(108, 108, 108);
+}
 
 .abajo-container {
     background-color: rgb(229, 237, 245);
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -143,4 +143,66 @@ body{
     max-height: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width:480px) {
+    .arriba-container {
+        display: flex;
+        overscroll-behavior-block: auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .abajo-container {
+        display: flex;
+        overscroll-behavior-block: auto;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .organize-boton {
+        display: flex;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tracking-boton {
+        display: flex;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width:480px) {
+    .schedule-boton {
+        display: flex;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container-botones-rectangulo {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width:480px) {
+    .part-2-container {
+        height: 100%;
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .down-buttons {
+        display: flex;
+    }
 }
